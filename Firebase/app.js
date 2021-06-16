@@ -15,3 +15,4 @@ db.collection('Blocos').get()
         blocslist.innerHTML = blocs
     })
     .catch(err => {console.log(err.message)})
+    
