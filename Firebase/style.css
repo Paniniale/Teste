@@ -1,0 +1,21 @@
+body{
+    background-color: #181818;
+    border:0px;
+}
+li {list-style: none;}
+p,h5{border:0px; margin:auto;}
+.Lista{
+    
+    display:flex;
+    width: 40%;
+    margin:10px;
+}
+.listblocs{
+    border-radius: 20px;
+    color: white;
+    background-color: gray;
+    padding: 20px;
+    
+    
+    
+}
