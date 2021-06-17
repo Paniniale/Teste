@@ -7,11 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <ul class="Lista" data-js="Blocs-List"></ul>
+<div class="corpo">
+  <div class="entradas">
+    <form data-js="adiciona">
+      <Label class="label" for="Title">Titulo</Label>
+        <input class="input"type="text" name="Titulo" id="Title" placeholder="Titulo da nota">
+     <label class="label" for="Text">Texto</label>
+        <textarea class="input" type="text" name="Texto" id="Text" placeholder="Texto da nota" ></textarea>
+      <button data-js="btnadd" class="btnadd" type="submit" >Criar Nota</button>
+  </form>
+  </div>
 
 
-<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+<div class="Blocos">
+  <ul class="Lista" data-js="Blocs-List"></ul>
+</div>
+</div>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
 
 <script>
   firebase.initializeApp({
