@@ -16,5 +16,3 @@ db.collection('Blocos').get()
     })
     .catch(err => {console.log(err.message)})
     
-
-    
