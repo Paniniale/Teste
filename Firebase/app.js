@@ -19,12 +19,9 @@ db.collection('Blocos').get()
     .catch(err => {console.log(err.message)})
 
 
-console.log(btnadd)
 
-btnadd.addEventListener('submit', saveDB )
-
-
-function saveDB(e) {
+btnadd.addEventListener('submit', e => {
+    
     e.preventDefault()
     
     db.collection('Blocos').add({
@@ -33,9 +30,9 @@ function saveDB(e) {
         Data: '15 de abril'
     })
     .then(() => {
-        Console.log("Nota Adicionada")
+        console.log("Nota Adicionada")
     })
-    .catch(() => {
-        Console.log("Nota Não Adicionada")
+    .catch(e => {
+        console.log("Nota Não Adicionada", e.message)
     })
-}
+} )
